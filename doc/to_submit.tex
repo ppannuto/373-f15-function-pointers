@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[top=.75in, bottom=.75in, left=.75in,right=.75in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage[colorlinks,urlcolor={blue},pdfstartview=FitH]{hyperref}
+
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont}%
+}
+\renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {\normalfont}%
+}
+\makeatother
+
+\begin{document}
+
+\pagestyle{fancyplain}
+
+\title{\vspace{-2em}\textbf{Homework 4}}
+\author{Pointers and the Funny Things You Can Do With Them}
+\date{}
+\maketitle
+
+\begin{Form}
+% Don't use hyperref's text label
+\def\LayoutTextField#1#2{#2}
+
+\begin{flushright}
+\begin{tabular}{r l}
+  Name     & \TextField[width=5cm,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{name} \\
+           & \\[-1em]
+  uniqname & \TextField[width=5cm,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{uniqname} \\
+\end{tabular}
+\end{flushright}
+
+\section{The code measures the ``effort'' of each sorting algorithm.\\What is
+effort in this case (what is it actually measuring)?\\How is it measured?\\
+\textbf{[5 points]}
+}
+
+\TextField[width=\hsize,height=80pt,multiline=true,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{q1}
+
+\subsection{\emph{Extra Credit (optional):}\\
+On modern CPUs, this may not be a good way of measuring effort.\\
+Explain one way it can be inaccurate and suggest a better measurement method.\\
+\textbf{[up to 2 points]}
+}
+
+\TextField[width=\hsize,height=80pt,multiline=true,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{q1-ec}
+
+\section{The end of \texttt{main} is printing something out.\\
+What is the data it's printing?\\What do those bytes do when the program is run?\\
+\textbf{[5 points]}
+}
+
+Copy the output from main here:
+\TextField[width=12.5cm,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{q2-output}
+
+\medskip
+
+\noindent
+\TextField[width=\hsize,height=80pt,multiline=true,charsize=10pt,color=black,bordercolor=,backgroundcolor=.95 .95 .95]{q2}
+
+\end{Form}
+
+\bigskip
+\hrule
+\bigskip
+\begin{flushright}
+\begin{tabular}{r r}
+  \textbf{Score from the programming portion} & \_\_\_ / 20 \\
+  \textbf{Score from the written portion}     & \_\_\_ / 10 \\
+\end{tabular}
+\end{flushright}
+\bigskip
+\hrule
+
+\end{document}
+
